@@ -1,0 +1,70 @@
+
+.btn-carrito {
+    display: none;
+    width: 50%;
+    height: 20%;
+    font-size: 1rem;
+    margin-left: 25%;
+    margin-top: 70%;
+    
+}
+
+.lista-carrito {
+    display: none;
+    list-style: none;
+    color: black;
+    padding: 0;
+}
+
+.logo-carrito {
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+}
+
+.logo-carrito:hover .buy-card {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.logo-carrito:hover .buy-card > button {
+    display: block;
+    background-color: transparent;
+    border: solid thin #e1e1e1;
+    color: #494848;
+    cursor: pointer;
+}
+
+.logo-carrito:hover .buy-card > button:hover {
+    border: solid thin #494848;
+}   
+
+.logo-carrito:hover .buy-card > .lista-carrito {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid thin #e1e1e1;
+}
+
+
+
+
+.enlaces-nav {
+    flex:1;
+    text-align: center;
+    border-right: solid thin #000;
+    border-bottom: solid thin #000;
+}
+
+.enlaces-nav:last-child {
+    border-right: none;
+}
+
+
+
