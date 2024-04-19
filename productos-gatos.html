@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendita mascotas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" ;>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--ENCABEZADO DE PAGINA-->
+
+  <header class="container-fluid pt-4" style="background-color: rgb(213, 165, 241); height: 90px;">
+    <div class="row justify-content-center text-center align-items-center">
+        <div class="col">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-heart-pulse-fill"></i>
+            Tienda Mascotas
+            </a>
+           
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">
+                <button class="btn-buscar">
+                  <i class="bi bi-search"></i>
+                </button>
+            </span>
+          </div>
+        </div>
+        <div class="col">
+          <i class="bi bi-cart-fill logo-carrito">
+            <div class="buy-card">
+              <ul class="lista-carrito" >
+                <li>Imagen</li>
+                <li>Nombre</li>
+                <li>Precio</li>
+                <li>Cantidad</li>
+              </ul> 
+              <button class="btn-carrito">Ver carrito</button>            
+            </div>
+          </i>
+        </div>
+    </div>
+  </header>
+
+  <!--BARRA NAVEGACION-->
+  <nav class="navbar navbar-expand-md pt-0">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item enlaces-nav">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item enlaces-nav">
+            <a class="nav-link active" href="productos.html" target="_blank">Productos</a>
+          </li>
+          <li class="nav-item enlaces-nav">
+            <a class="nav-link active" href="sucursales.html">Sucursales</a>
+          </li>
+          <li class="nav-item enlaces-nav">
+            <a class="nav-link active" href="ayuda.html">¿Necesitas ayuda?</a>
+          </li>
+          <li class="nav-item enlaces-nav">
+            <a class="nav-link active" href="contacto.html">Contacto</a>
+          </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <h4 class="text-center pt-5">Todos los productos de gatos</h4>
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="card h-100">
+            <img src="img/producto-gato1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Alimento Acana</h5>
+              <h5 class="">$25.990</h5>
+              <button type="button" class="btn btn-warning">Añadir al carrito </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="card h-100">
+            <img src="img/producto-gato2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Varita loca</h5>
+              <h5 class="">$4.990</h5>
+              <button type="button" class="btn btn-warning">Añadir al carrito </button>
+            </div>
+          </div> 
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="card h-100">
+            <img src="img/producto-gato3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tunel gris</h5>
+              <h5 class="">$14.590</h5>
+              <button type="button" class="btn btn-warning">Añadir al carrito </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <div class="card h-100">
+            <img src="img/producto-gato4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hierba catnip</h5>
+              <h5 class="">$4.990</h5>
+              <button type="button" class="btn btn-warning">Añadir al carrito </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+            <div class="card h-100">
+                <img src="img/producto-gato5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Fuente de agua</h5>
+                <h5 class="">$19.990</h5>
+                <button type="button" class="btn btn-warning">Añadir al carrito </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mb-5">
+            <div class="card h-100">
+                <img src="img/producto-gato6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Cama de gato</h5>
+                <h5 class="">$15.990</h5>
+                <button type="button" class="btn btn-warning">Añadir al carrito </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mb-5">
+            <div class="card h-100">
+                <img src="img/producto-gato7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Burbujas catnip</h5>
+                <h5 class="">$12.990</h5>
+                <button type="button" class="btn btn-warning">Añadir al carrito </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mb-5">
+            <div class="card h-100">
+                <img src="img/producto-gato8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Juguete rat&oacute;n</h5>
+                <h5 class="">$10.990</h5>
+                <button type="button" class="btn btn-warning">Añadir al carrito </button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+    </script>
+</body>
+</html>
