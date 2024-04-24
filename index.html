@@ -12,21 +12,40 @@
 <body>
 
   <!--ENCABEZADO DE PAGINA-->
+  <div class="container-fluid informativo">
+    <div class="row">
+      <div class="col-sm-8 texto-envio">
+        <h7>
+          Envíos gratis entre 24 a 48 horas desde $25.000
 
-  <header class="container-fluid pt-4" style="background-color: rgb(213, 165, 241); height: 90px;">
-    <div class="row justify-content-center text-center align-items-center">
+        </h7>
+      </div>
+      <div class="col-sm-4 redes">
+        <a href="#">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header class="container-fluid header-principal">
+    <div class="row text-center align-items-center pt-2 pb-2">
         <div class="col">
             <a class="navbar-brand" href="index.html">
-                <i class="bi bi-heart-pulse-fill"></i>
-            Tienda Mascotas
-            </a>
-           
+                <img src="img/AmiPet.png" alt="logo" width="70" height="70">
+            </a> 
         </div>
         <div class="col">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="basic-addon1">
             <span class="input-group-text" id="basic-addon1">
-                <button class="btn-buscar">
+                <button class="btn-buscar" type="submit">
                   <i class="bi bi-search"></i>
                 </button>
             </span>
@@ -49,77 +68,141 @@
   </header>
 
   <!--BARRA NAVEGACION-->
-  <nav class="navbar navbar-expand-md pt-0">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <div>
+    <nav class="navbar navbar-expand-sm pt-0 pb-0">
+      <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav w-100 justify-content-between">
+        <ul class="navbar-nav w-100">
           <li class="nav-item enlaces-nav">
-            <a class="nav-link active" href="index.html">Inicio</a>
+            <a class="nav-link active btn-nav" href="index.html">Inicio</a>
           </li>
           <li class="nav-item enlaces-nav">
-            <a class="nav-link active" href="productos.html" target="_blank">Productos</a>
+            <a class="nav-link active btn-nav" href="productos.html" target="_blank">Productos</a>
           </li>
           <li class="nav-item enlaces-nav">
-            <a class="nav-link active" href="sucursales.html">Sucursales</a>
+            <a class="nav-link active btn-nav" href="sucursales.html">Nosotros</a>
           </li>
           <li class="nav-item enlaces-nav">
-            <a class="nav-link active" href="ayuda.html">¿Necesitas ayuda?</a>
+            <a class="nav-link active btn-nav" href="ayuda.html">Mi pedido</a>
           </li>
           <li class="nav-item enlaces-nav">
-            <a class="nav-link active" href="contacto.html">Contacto</a>
+            <a class="nav-link active btn-nav" href="contacto.html">Contacto</a>
           </li>
-          </ul>
+        </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 
   <!--CARRUSEL PRINCIPAL-->
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
+  <div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/principal1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <a class="btn btn-base" href="juguetes-perros.html" role="button">Ver productos</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/principal2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <a class="btn btn-base" href="#" role="button">Ver productos</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <!--ANUNCIO OFERTAS-->
+  <div class="container-fluid pt-5 px-0">
+    <a href="ofertas.html">
+      <img src="img/Ver ofertas.png" class="img-fluid w-100" alt="...">
+    </a>
+  </div>
+
+  
+
+  <div id="carrusel-productos" class="carousel carousel-dark slide pt-5">
+    <h3 class="text-center"> Productos destacados</h3>
+    <div class="carousel-inner pt-3">
       <div class="carousel-item active">
-        <img src="img/principal1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-          <a class="btn btn-juguetes" href="juguetes-perros.html" role="button">VER JUGUETES</a>
+        <div class="cards-wrapper">
+          <div class="card card-productos">
+            <img src="img/065fe-zeedogatlantaleash-tirador19180.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Juguete Hot Dog</h5>
+              <h5 class="">$11.990</h5>
+              <a href="#" class="btn btn-base">Agregar al carrito</a>
+            </div>
+          </div>
+          <div class="card card-productos">
+            <img src="img/Bandana Black Sheep.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Juguete Hot Dog</h5>
+              <h5 class="">$11.990</h5>
+              <a href="#" class="btn btn-base">Agregar al carrito</a>
+            </div>
+          </div>
+          <div class="card card-productos">
+            <img src="img/Correa Magical - 1.2 metros.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Juguete Hot Dog</h5>
+              <h5 class="">$11.990</h5>
+              <a href="#" class="btn btn-base">Agregar al carrito</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/principal2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-          <a class="btn btn-juguetes" href="#" role="button">VER JUGUETES</a>
+        <div class="cards-wrapper">
+          <div class="card card-productos">
+            <img src="img/3208c-cinnamon-1_ruff_leash.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Juguete Hot Dog</h5>
+              <h5 class="">$11.990</h5>
+              <a href="#" class="btn btn-base">Agregar al carrito</a>
+            </div>
+          </div>
+          <div class="card card-productos">
+            <img src="img/Bandana Tropical.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Juguete Hot Dog</h5>
+              <h5 class="">$11.990</h5>
+              <a href="#" class="btn btn-base">Agregar al carrito</a>
+            </div>
+          </div>
+          <div class="card card-productos">
+            <img src="img/Bandana Ducklings.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Juguete Hot Dog</h5>
+              <h5 class="">$11.990</h5>
+              <a href="#" class="btn btn-base">Agregar al carrito</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-productos" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carrusel-productos" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 
-  <!--PRODUCTOS-->
-  <div class="container pt-5 pb-5">
-    <div class="row">
-      <div class="col">
-        <a href="productos-gatos.html">
-            <div class="card">
-                <img src="img/gatos.png" class="card-img-top" alt="...">
-            </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="">
-          <div class="card">
-            <img src="img/perros.png" class="card-img-top" alt="...">
-          </div>
-        </a>
-      </div>
-    </div>
 
 
 
@@ -129,25 +212,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous">
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous">
+  </script>
 </body>
 </html>
