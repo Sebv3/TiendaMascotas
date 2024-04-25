@@ -1,20 +1,19 @@
 .informativo {
-    padding-top: 5px;
-    background-color: #f9f2e8;
-    min-height: 35px; 
-    max-height: 70px;
+    background-color: #000000d3;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
+    height: 30px;
+    padding-top: 3px;
 }
 
 .texto-envio {
-    color: rgba(0, 0, 0, 0.57);
+    color: rgba(255, 255, 255, 0.605);
 }
 
 
 .redes a {
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
 
