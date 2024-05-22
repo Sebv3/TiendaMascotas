@@ -33,36 +33,48 @@
     </div>
   </div>
 
-  <header class="container-fluid header-principal">
-    <div class="row text-center align-items-center pt-2 pb-2">
-        <div class="col">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/AmiPet.png" alt="logo" width="70" height="70">
-            </a> 
-        </div>
-        <div class="col">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="basic-addon1">
-            <span class="input-group-text" id="basic-addon1">
-                <button class="btn-buscar" type="submit">
-                  <i class="bi bi-search"></i>
-                </button>
+  <header class="container-fluid header-principal text-center align-items-center">
+    <div>
+        <a class="navbar-brand" href="index.html">
+            <img src="img/AmiPet.png" alt="logo" width="70" height="70">
+        </a> 
+    </div>
+    <div class="input-group w-50 h-100">
+      <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="basic-addon1">
+      <span class="input-group-text" id="basic-addon1">
+          <button class="btn-buscar" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+      </span>
+    </div>
+    <div class="container-icon">
+      <i class="bi bi-handbag logo-carrito">            
+      </i>
+      <div class="count-products">
+        <span id="contador-productos">
+          0
+        </span>
+      </div>
+      <div class="container-cart-products hidden-cart">
+        <div class="cart-products">
+          <div class="info-cart-products">
+            <span class="cantidad-producto-carrito">
+              1
             </span>
-          </div>
+            <p class="titulo-producto-carrito">
+              Juguete Hot Dog
+            </p>
+            <span class="precio-producto-carrito">
+              $11.990
+            </span>
+            <i class="bi bi-x-lg icon-close"></i>
+          </div>      
         </div>
-        <div class="col">
-          <i class="bi bi-cart-fill logo-carrito">
-            <div class="buy-card">
-              <ul class="lista-carrito" >
-                <li>Imagen</li>
-                <li>Nombre</li>
-                <li>Precio</li>
-                <li>Cantidad</li>
-              </ul> 
-              <button class="btn-carrito">Ver carrito</button>            
-            </div>
-          </i>
+        <div class="cart-total">
+          <h3>Total: </h3>
+          <span class="total-pagar">$200</span>
         </div>
+      </div>
     </div>
   </header>
 

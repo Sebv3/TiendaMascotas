@@ -33,39 +33,54 @@
     </div>
   </div>
 
-  <header class="container-fluid header-principal">
-    <div class="row text-center align-items-center pt-2 pb-2">
-        <div class="col">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/AmiPet.png" alt="logo" width="70" height="70">
-            </a> 
+  <header class="container-fluid header-principal text-center align-items-center">
+    <div>
+        <a class="navbar-brand" href="index.html">
+            <img src="img/AmiPet.png" alt="logo" width="70" height="70">
+        </a> 
+    </div>
+    <div class="input-group w-50 h-100">
+      <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="basic-addon1">
+      <span class="input-group-text" id="basic-addon1">
+          <button class="btn-buscar" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+      </span>
+    </div>
+    <div class="container-icon">
+      <div class="container-cart-icon">
+        <i class="bi bi-handbag logo-carrito">            
+        </i>
+        <div class="count-products">
+          <span id="contador-productos">
+            0
+          </span>
         </div>
-        <div class="col">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="basic-addon1">
-            <span class="input-group-text" id="basic-addon1">
-                <button class="btn-buscar" type="submit">
-                  <i class="bi bi-search"></i>
-                </button>
-            </span>
+      </div>      
+      <div class="container-cart-products hidden-cart">
+        <div class="row-product">
+          <div class="cart-product">
+            <div class="info-cart-products">
+              <span class="cantidad-producto-carrito">
+                
+              </span>
+              <p class="titulo-producto-carrito">
+                Carrito Vacio
+              </p>
+              <span class="precio-producto-carrito">
+                
+              </span>
+            </div>  
+            <i class="bi bi-x-lg icon-close"></i>            
           </div>
         </div>
-        <div class="col">
-          <i class="bi bi-cart-fill logo-carrito">
-            <div class="buy-card">
-              <ul class="lista-carrito" >
-                <li>Imagen</li>
-                <li>Nombre</li>
-                <li>Precio</li>
-                <li>Cantidad</li>
-              </ul> 
-              <button class="btn-carrito">Ver carrito</button>            
-            </div>
-          </i>
+        <div class="cart-total">
+          <h3>Total: </h3>
+          <span class="total-pagar">$0</span>
         </div>
+      </div>
     </div>
   </header>
-
   <!--BARRA NAVEGACION-->
   <div>
     <nav class="navbar navbar-expand-sm pt-0 pb-0">
@@ -136,58 +151,70 @@
     <h3 class="text-center"> Productos destacados</h3>
     <div class="carousel-inner pt-3">
       <div class="carousel-item active">
-        <div class="cards-wrapper">
-          <div class="card card-productos">
-            <img src="img/065fe-zeedogatlantaleash-tirador19180.png" class="card-img-top" alt="...">
+        <div class="cards-wrapper container-items">
+          <div class="card">
+            <figure>
+              <img src="img/065fe-zeedogatlantaleash-tirador19180.png" class="card-img-top" alt="...">
+            </figure>
             <div class="card-body">
-              <h5 class="card-title">Juguete Hot Dog</h5>
-              <h5 class="">$11.990</h5>
-              <a href="#" class="btn btn-base">Agregar al carrito</a>
-            </div>
+              <h5>Juguete Hot Dog</h5>
+              <h6>$11.990</h5>
+                <button type="button" class="btn btn-warning btn-card">Añadir al carrito </button>
+              </div>
           </div>
           <div class="card card-productos">
-            <img src="img/Bandana Black Sheep.png" class="card-img-top" alt="...">
+            <figure>
+              <img src="img/Bandana Black Sheep.png" class="card-img-top" alt="...">
+            </figure>
             <div class="card-body">
-              <h5 class="card-title">Juguete Hot Dog</h5>
-              <h5 class="">$11.990</h5>
-              <a href="#" class="btn btn-base">Agregar al carrito</a>
-            </div>
+              <h5>Juguete Hot Dog</h5>
+              <h6>$11.990</h5>
+                <button type="button" class="btn btn-warning btn-card">Añadir al carrito </button>
+              </div>
           </div>
           <div class="card card-productos">
-            <img src="img/Correa Magical - 1.2 metros.png" class="card-img-top" alt="...">
+            <figure>
+              <img src="img/Correa Magical - 1.2 metros.png" class="card-img-top" alt="...">
+            </figure>
             <div class="card-body">
-              <h5 class="card-title">Juguete Hot Dog</h5>
-              <h5 class="">$11.990</h5>
-              <a href="#" class="btn btn-base">Agregar al carrito</a>
-            </div>
+              <h5>Juguete Hot Dog</h5>
+              <h6>$11.990</h5>
+                <button type="button" class="btn btn-warning btn-card">Añadir al carrito </button>
+              </div>
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="cards-wrapper">
           <div class="card card-productos">
-            <img src="img/3208c-cinnamon-1_ruff_leash.png" class="card-img-top" alt="...">
+            <figure>
+              <img src="img/3208c-cinnamon-1_ruff_leash.png" class="card-img-top" alt="...">
+            </figure>
             <div class="card-body">
-              <h5 class="card-title">Juguete Hot Dog</h5>
-              <h5 class="">$11.990</h5>
-              <a href="#" class="btn btn-base">Agregar al carrito</a>
-            </div>
+              <h5>Juguete Hot Dog</h5>
+              <h6>$11.990</h5>
+                <button type="button" class="btn btn-warning btn-card">Añadir al carrito </button>
+              </div>
           </div>
           <div class="card card-productos">
-            <img src="img/Bandana Tropical.png" class="card-img-top" alt="...">
+            <figure>
+              <img src="img/Bandana Tropical.png" class="card-img-top" alt="...">
+            </figure>
             <div class="card-body">
-              <h5 class="card-title">Juguete Hot Dog</h5>
-              <h5 class="">$11.990</h5>
-              <a href="#" class="btn btn-base">Agregar al carrito</a>
-            </div>
+              <h5>Juguete Hot Dog</h5>
+              <h6>$11.990</h5>
+                <button type="button" class="btn btn-warning btn-card">Añadir al carrito </button>
+              </div>
           </div>
           <div class="card card-productos">
+            <figure>
             <img src="img/Bandana Ducklings.png" class="card-img-top" alt="...">
+            </figure>
             <div class="card-body">
-              <h5 class="card-title">Juguete Hot Dog</h5>
-              <h5 class="">$11.990</h5>
-              <a href="#" class="btn btn-base">Agregar al carrito</a>
-            </div>
+              <h5>Juguete Hot Dog</h5>
+              <h6>$11.990</h5>
+                <button type="button" class="btn btn-warning btn-card">Añadir al carrito </button>
+              </div>
           </div>
         </div>
       </div>
@@ -210,7 +237,7 @@
 
 
 
-
+  <script src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
           crossorigin="anonymous">
