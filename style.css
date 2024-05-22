@@ -108,6 +108,11 @@ header {
     width: 100%;
     background-color: #000;
     color: white;
+    border: none;
+}
+
+.btn-card:hover {
+    background-color: rgb(213, 165, 241);
 }
 
 .card img {
@@ -226,4 +231,29 @@ header {
 .cart-empty {
     padding: 20px;
     text-align: center;
+}
+
+.errores {
+    background: rgb(250, 52, 52);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+
+    margin-top: -35px;
+    right: 0;
+    font-size: 14px;
+    position: absolute;
+    padding: 5px;
+    border-radius: 10%;
+    display: none;
+}
+
+.form-group {
+    position: relative;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
