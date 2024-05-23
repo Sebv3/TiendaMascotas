@@ -257,3 +257,43 @@ header {
     margin-bottom: 5px;
     margin-top: 10px;
 }
+
+.img-categoria {
+    width: 32%;
+    height: auto;
+    margin: 2%;
+    border-radius: 30%;
+
+}
+
+.container-categorias {
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.categoria {
+    text-decoration: none;
+}
+
+.categoria:hover {
+    box-shadow: 0 10px 20px rgba(64, 24, 24, 0.2);
+}
+
+.categoria figure {
+    overflow: hidden;
+}
+
+.categoria:hover img {
+    transform: scale(1.2);
+}
+
+.btn-cart {
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn-cart:hover {
+    background-color: #000000ca;
+}
