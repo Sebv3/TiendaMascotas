@@ -139,7 +139,6 @@ header {
 .logo-carrito {
     font-size: 40px;
     color: #000;
-    margin-right: 40px;
 }
 
 .logo-carrito:hover {
@@ -154,7 +153,6 @@ header {
     position: absolute;
     top: 55%;
     right: 0;
-    margin-right: 40px;
 
     background-color: #000;
     color: #fff;
@@ -165,6 +163,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #contador-productos {
@@ -334,4 +333,39 @@ header {
 
 .cart-options {
     align-items: center;
+}
+
+.container-footer {
+    height: 300px;
+    background-color: #000000d3;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.logo {
+    background-color: #fff;
+}
+
+.footer1 {
+    color: #fff;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.footer2 {
+    color: #fff;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-redes {
+    color: #fff;
+    font-size: 30px;
+    
 }

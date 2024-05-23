@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const index = allProducts.findIndex(p => p.title === title);
             if (index !== -1) {
-                if (allProducts[index].quantity > 1) {
+                if (allProducts[index].quantity >= 1) {
                     allProducts[index].quantity++;
                 } else {
                     allProducts.splice(index, 1);
