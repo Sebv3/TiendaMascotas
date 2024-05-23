@@ -7,12 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const rowProduct = document.querySelector('.row-product');
     const valorTotal = document.querySelector('.total-pagar');
     const countProducts = document.querySelector('#contador-productos');
+    const emptyCartBtn = document.querySelector('.btn-cart-empty')
 
     let allProducts = [];
 
     btnCart.addEventListener('click', () => {
         containerCartProducts.classList.toggle('hidden-cart');
     });
+
 
     productsList.addEventListener('click', e => {
         if (e.target.classList.contains('btn-card')) {
@@ -51,6 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
             showHTML();
         }
     });
+
+    emptyCartBtn.addEventListener('click', () => {
+        allProducts = [];
+        showHTML();
+    });
+
 
     const showHTML = () => {
 

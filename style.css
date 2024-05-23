@@ -1,15 +1,26 @@
 .informativo {
     background-color: #000000d3;
     text-align: center;
-    font-size: 14px;
     height: 30px;
     padding-top: 3px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .texto-envio {
     color: rgba(255, 255, 255, 0.605);
+    flex: 1;
+    width: auto;
+    height: auto;
 }
 
+.redes {
+    display: flex;
+    gap: 10px;
+    height: auto;
+    width: auto;
+    
+}
 
 .redes a {
     text-decoration: none;
@@ -20,6 +31,10 @@
     border: none;
     background-color: #00000000;
     
+}
+
+.navbar-brand {
+    margin-left: 40px;
 }
 
 .btn-nav {
@@ -44,12 +59,12 @@
 }
 
 .btn-base {
-    background-color: purple;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 .btn-base:hover {
-    background-color: rgb(213, 165, 241);
-    color: white;
+    background-color: #000000ca;
+    color: #fff;
 }
 
 .cards-wrapper {
@@ -59,7 +74,6 @@
 .card-productos {
     margin: 0 5px;
 }
-
 
 
 .titulo-contacto {
@@ -125,6 +139,7 @@ header {
 .logo-carrito {
     font-size: 40px;
     color: #000;
+    margin-right: 40px;
 }
 
 .logo-carrito:hover {
@@ -139,11 +154,12 @@ header {
     position: absolute;
     top: 55%;
     right: 0;
+    margin-right: 40px;
 
     background-color: #000;
     color: #fff;
-    width: 25px;
-    height: 25px;    
+    width: 23px;
+    height: 23px;    
 
     display: flex;
     justify-content: center;
@@ -153,6 +169,7 @@ header {
 
 #contador-productos {
     font-size: 12px;
+    font-weight: bold;
 }
 
 .container-cart-products {
@@ -296,4 +313,15 @@ header {
 
 .btn-cart:hover {
     background-color: #000000ca;
+    color: #fff;
+}
+
+.btn-cart-empty {
+    cursor: pointer;
+    margin-right: 200px;
+    font-size: 30px;
+}
+
+.cart-options {
+    align-items: center;
 }
