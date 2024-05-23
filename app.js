@@ -45,12 +45,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     rowProduct.addEventListener('click', e => {
-        if (e.target.classList.contains('icon-close')) {
+        if (e.target.classList.contains('btn-restar')) {
             const product = e.target.parentElement;
             const title = product.querySelector('p').textContent;
             
-            allProducts = allProducts.filter(product => product.title !== title);
-            showHTML();
+            const index = allProducts.findIndex(p => p.title === title);
+            if (index !== -1) {
+                if (allProducts[index].quantity > 1) {
+                    allProducts[index].quantity--;
+                } else {
+                    allProducts.splice(index, 1);
+                }
+                showHTML();
+            }
+        }
+    });
+
+    rowProduct.addEventListener('click', e => {
+        if (e.target.classList.contains('btn-sumar')) {
+            const product = e.target.parentElement;
+            const title = product.querySelector('p').textContent;
+            
+            const index = allProducts.findIndex(p => p.title === title);
+            if (index !== -1) {
+                if (allProducts[index].quantity > 1) {
+                    allProducts[index].quantity++;
+                } else {
+                    allProducts.splice(index, 1);
+                }
+                showHTML();
+            }
         }
     });
 
@@ -77,7 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="titulo-producto-carrito">${product.title}</p>
                     <span class="precio-producto-carrito">${product.price}</span>
                 </div>  
-                <i class="bi bi-x-lg icon-close"></i>       
+                <i class="bi bi-dash btn-restar"></i>
+                <i class="bi bi-plus btn-sumar"></i>     
             `;
 
             rowProduct.append(containerProduct);

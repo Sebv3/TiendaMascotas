@@ -198,13 +198,23 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 }
 
-.icon-close {
+.btn-restar {
     width: 25px;
     height: 25px;
     cursor: pointer;
 }
 
-.icon-close:hover {
+.btn-sumar {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.btn-restar:hover {
+    color: red;
+}
+
+.btn-sumar:hover {
     color: red;
 }
 
