@@ -263,7 +263,7 @@ header {
     height: auto;
     margin: 2%;
     border-radius: 30%;
-    
+
 }
 
 .container-categorias {
@@ -288,13 +288,12 @@ header {
     transform: scale(1.2);
 }
 
+.btn-cart {
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 20px;
+}
 
-
-
-
-
-
-
-
-
-
+.btn-cart:hover {
+    background-color: #000000ca;
+}
