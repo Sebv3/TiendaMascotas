@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const btnCart = document.querySelector('.container-cart-icon');
     const containerCartProducts = document.querySelector('.container-cart-products');
@@ -7,16 +5,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const rowProduct = document.querySelector('.row-product');
     const valorTotal = document.querySelector('.total-pagar');
     const countProducts = document.querySelector('#contador-productos');
-    const emptyCartBtn = document.querySelector('.btn-cart-empty')
+    const emptyCartBtn = document.querySelector('.btn-cart-empty');
 
     let allProducts = [];
 
-    btnCart.addEventListener('click', () => {
+    btnCart.addEventListener('click', toggleCart);
+
+    productsList.addEventListener('click', addToCart);
+
+    rowProduct.addEventListener('click', adjustQuantity);
+
+    emptyCartBtn.addEventListener('click', emptyCart);
+
+    function toggleCart() {
         containerCartProducts.classList.toggle('hidden-cart');
-    });
+    }
 
-
-    productsList.addEventListener('click', e => {
+    function addToCart(e) {
         if (e.target.classList.contains('btn-card')) {
             const product = e.target.parentElement;
             const infoProduct = {
@@ -25,67 +30,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 price: product.querySelector('h6').textContent
             };
 
-            const exists = allProducts.some(product => product.title === infoProduct.title);
+            const exists = allProducts.some(p => p.title === infoProduct.title);
             
             if (exists) {
-                const products = allProducts.map(product => {
-                    if (product.title === infoProduct.title) {
-                        product.quantity++;
-                        return product;
-                    } else {
-                        return product;
+                allProducts = allProducts.map(p => {
+                    if (p.title === infoProduct.title) {
+                        p.quantity++;
                     }
+                    return p;
                 });
-                allProducts = [...products];
             } else {
                 allProducts = [...allProducts, infoProduct];
             }
-            showHTML();   
+            showCart();   
         } 
-    });
+    }
 
-    rowProduct.addEventListener('click', e => {
-        if (e.target.classList.contains('btn-restar')) {
+    function adjustQuantity(e) {
+        if (e.target.classList.contains('btn-restar') || e.target.classList.contains('btn-sumar')) {
             const product = e.target.parentElement;
-            const title = product.querySelector('p').textContent;
-            
+            const title = product.querySelector('.titulo-producto-carrito').textContent;
             const index = allProducts.findIndex(p => p.title === title);
+
             if (index !== -1) {
-                if (allProducts[index].quantity > 1) {
+                if (e.target.classList.contains('btn-restar')) {
                     allProducts[index].quantity--;
-                } else {
-                    allProducts.splice(index, 1);
-                }
-                showHTML();
-            }
-        }
-    });
-
-    rowProduct.addEventListener('click', e => {
-        if (e.target.classList.contains('btn-sumar')) {
-            const product = e.target.parentElement;
-            const title = product.querySelector('p').textContent;
-            
-            const index = allProducts.findIndex(p => p.title === title);
-            if (index !== -1) {
-                if (allProducts[index].quantity >= 1) {
+                    if (allProducts[index].quantity === 0) {
+                        allProducts.splice(index, 1);
+                    }
+                } else if (e.target.classList.contains('btn-sumar')) {
                     allProducts[index].quantity++;
-                } else {
-                    allProducts.splice(index, 1);
                 }
-                showHTML();
+                showCart();
             }
         }
-    });
+    }
 
-    emptyCartBtn.addEventListener('click', () => {
+    function emptyCart() {
         allProducts = [];
-        showHTML();
-    });
+        showCart();
+    }
 
-
-    const showHTML = () => {
-
+    function showCart() {
         rowProduct.innerHTML = '';
 
         let total = 0;
@@ -113,6 +99,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
         valorTotal.innerText = `$${total.toLocaleString('es-CL')}`;
         countProducts.innerText = totalOfProducts;
-    };
+    }
 });
-
