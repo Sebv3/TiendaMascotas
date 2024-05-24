@@ -336,10 +336,7 @@ header {
 }
 
 .container-footer {
-    height: 300px;
     background-color: #000000d3;
-    margin-top: 50px;
-    padding: 10px;
 }
 
 .logo {
@@ -348,24 +345,17 @@ header {
 
 .footer1 {
     color: #fff;
-    list-style: none;
-    margin-top: 25px;
 }
 
 .footer2 {
     color: #fff;
-    list-style: none;
-    margin-top: 25px;
-}
-
-.contenido-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .footer-redes {
     color: #fff;
-    font-size: 30px;
-    
 }
+
+.list-footer {
+    list-style: none;
+}
+
